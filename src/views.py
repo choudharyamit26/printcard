@@ -25,8 +25,8 @@ class CreatePdf(APIView):
         context = {
             'front_image_url': front_image_url,
             'back_image_url': back_image_url,
-            'no_of_cards': range(0, no_of_cards // 10),
-            'remainder': range(0, no_of_cards % 10)
+            'no_of_cards': range(0, int(no_of_cards) // 10),
+            'remainder': range(0, int(no_of_cards) % 10)
         }
         # return render(self.request, 'index.html', context)
         html_string = render_to_string('index.html', context)
