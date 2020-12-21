@@ -13,7 +13,7 @@ from .models import Pdf
 class CreatePdf(APIView):
     model = Pdf
 
-    def get(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         front_image_url = self.request.data['front_image_url']
         back_image_url = self.request.data['back_image_url']
         no_of_cards = self.request.data['no_of_cards']
