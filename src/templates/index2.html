@@ -2,24 +2,33 @@
 
 <head>
     <style>
-        .boxAll {
-            width: 493.728px !important;
-            height: 422.528px !important;
-            min-width: 493.728px !important;
-            min-height: 422.528px !important;
-            max-width: 493.728px !important;
-            max-height: 422.528px !important;
+.boxAll {
+            width: 110% !important;
+            height: 502.528px !important;
+            min-width: 110% !important;
+            min-height: 502.528px !important;
+            max-width: 110% !important;
+            max-height: 502.528px !important;
+            margin-top:-40px;
+            margin-left:-25px;
         }
+.boxAll img{
+        width:100%;
+        height:1000px;
+        }
+
+
     </style>
 </head>
 
 <body>
+{% for x in page_count %}
 <div class="boxAll">
-    {% for x in page_count %}
-        <img src="{{front_image_url}}">
-        <img src="{{back_image_url}}">
-    {% endfor %}
+    <img src="{{front_image_url}}">
+    <img src="{{back_image_url}}">
+    <!--    {{forloop.counter}}-->
 </div>
+{% endfor %}
 </body>
 
 </html>
