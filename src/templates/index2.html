@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <style>
+        .boxAll {
+            width: 493.728px !important;
+            height: 422.528px !important;
+            min-width: 493.728px !important;
+            min-height: 422.528px !important;
+            max-width: 493.728px !important;
+            max-height: 422.528px !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="boxAll">
+    {% for x in page_count %}
+        <img src="{{front_image_url}}">
+        <img src="{{back_image_url}}">
+    {% endfor %}
+</div>
+</body>
+
+</html>
