@@ -25,8 +25,11 @@
     height: 204px;
     margin:0 0 10px 0}
 
-        .boxAll ul li a{ height:100%  }
-
+.boxAll ul li a{ height:100%  }
+.boxAll ul li a img{
+border-radius:10px;
+overflow:hidden;
+}
     </style>
 </head>
 
@@ -34,7 +37,7 @@
     <div class="boxAll">
         {% for x in no_of_cards %}
         <ul>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
             <li><a href="#0"><img src="{{front_image_url}}"></a></li>
         </ul>
         <ul>
