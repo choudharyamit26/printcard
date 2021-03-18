@@ -2,24 +2,25 @@
 
 <head>
     <style>
-        .boxAll ul li a {
+.boxAll ul li a {
             display: block;
         }
 
-        .boxAll ul li a img {
+.boxAll ul li a img {
             width: 100%;
             height: 100%;
         }
 
 
-        .boxAll{}
-        .boxAll ul{
+    .boxAll{}
+    .boxAll ul{
     padding: 0px;
     margin: 0 -30px 30px;
     display: flex;
     justify-content: space-between;
 }
-        .boxAll ul li{     width: 317px;
+.boxAll ul li{
+    width: 317px;
     list-style: none;
     display: inline-block;
     height: 204px;
@@ -36,35 +37,35 @@
         {% for x in no_of_cards %}
         <ul>
             <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{front_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         <ul>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
-            <li><a href="#0"><img src="{{back_image_url}}"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
+            <li><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
         </ul>
         {% endfor %}
         <div class="mainFlex">
@@ -76,7 +77,7 @@
                 min-width: 249.449px;
                 min-height: 161.575px;
                 max-width: 249.449px;
-                max-height: 161.575px;"><a href="#0"><img src="{{front_image_url}}"></a></li>
+                max-height: 161.575px;"><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
             </ul>
             {% else %}
             <ul class="left-img disFlex"
@@ -86,7 +87,7 @@
                 min-height: 161.575px ;
                 max-width: 249.449px ;
                 max-height: 161.575px ;
-                margin-left: 5px;"><a href="#0"><img src="{{front_image_url}}"></a></li>
+                margin-left: 5px;"><a href="#0"><img src="{{front_image_url}}" style="border-radius:10px;"></a></li>
             </ul>
             {% endif %}
             {% endfor %}
@@ -103,7 +104,7 @@
                 min-width: 249.449px;
                 min-height: 161.575px;
                 max-width: 249.449px;
-                max-height: 161.575px;"><a href="#0"><img src="{{back_image_url}}"></a></li>
+                max-height: 161.575px;"><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
             </ul>
             {% else %}
             <ul class="left-img disFlex"
@@ -113,7 +114,7 @@
                 min-height: 161.575px ;
                 max-width: 249.449px ;
                 max-height: 161.575px ;
-                margin-left: 5px;"><a href="#0"><img src="{{back_image_url}}"></a></li>
+                margin-left: 5px;"><a href="#0"><img src="{{back_image_url}}" style="border-radius:10px;"></a></li>
             </ul>
             {% endif %}
             {% endfor %}
